@@ -18,6 +18,16 @@ header {
     z-index: 1000;
 }
 
+footer {
+    background-color: #fdfcf7;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.9rem;
+    color: #555;
+}
+
 .navbar {
     display: flex;
     align-items: center;
