@@ -1,29 +1,152 @@
+/* BASE STYLING */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #fefcf6; /* soft off-white */
     color: #111;
+    scroll-behavior: smooth;
 }
 
-section {
-    padding: 60px 20%;
+/* NAVBAR */
+header {
+    background-color: #ffffff;
+    padding: 15px 10%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0077b5; /* LinkedIn blue hover effect */
+}
+
+.linkedin-btn {
+    margin-left: 25px;
+    padding: 6px 12px;
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.linkedin-btn:hover {
+    background-color: #005582;
+}
+
+/* HERO SECTION */
 .hero {
-    text-align: center;
-    background-color: #f5f5f5;
+    text-align: left;
+    padding: 100px 10%;
 }
 
-h1 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-h2 {
+.hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.download-btn:hover {
+    background-color: #333;
+}
+
+/* LINKS */
+a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .linkedin-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
 }
