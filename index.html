@@ -14,20 +14,38 @@
 
     <!-- NAVBAR -->
     <header>
-        <div class="navbar">
-            <div class="logo">Ryan McCuaig</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a class="linkedin-btn" href="https://www.linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
-        </div>
+        <nav class="navbar">
+          <!-- Logo -->
+          <div class="logo">Ryan McCuaig</div>
+      
+          <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      
+          <!-- Social icons -->
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">
+              <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://discord.com/users/ryanmccuaig" target="_blank">
+              <img src="images/discord.svg" alt="Discord">
+            </a>
+          </div>
+      
+          <!-- Mobile menu toggle (optional) -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
     </header>
+      
 
     <div class="announcement">
         🚧 This website is currently under construction. More updates coming soon.
@@ -48,8 +66,8 @@
         </p>
         <p>
             I graduated in 2025 with a Bachelor of Engineering Science (BESc) in Mechatronic Systems from Western University, where I gained a strong foundation in robotics, control, image processing and analysis, embedded systems, and other core engineering disciplines.
-            My hands-on experiences include co-op positions in quality and manufacturing engineering, contributing to Western Engineering robotics teams, and helping design an autonomous tree-planting robot for reforestation.
-            These opportunities allowed me to design, build, and test mechanical and electrical systems — each project fueling my passion for creating solutions that make a difference.
+            My hands-on experiences include co-op positions in quality and manufacturing engineering, contributing to the Western Engineering robotics teams, and helping design an autonomous tree-planting robot for reforestation.
+            These opportunities allowed me to design, build, and test mechanical and electrical systems, with each project fueling my passion for creating solutions that make a difference.
         </p>
         <p>
             Beyond engineering, I enjoy golf, skiing, and working on cars, and I’m always looking for new challenges that let me build, tinker, and innovate.
@@ -87,11 +105,37 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="section">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:rmjmccuaig@gmail.com">rmjmccuaig@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/ryanmccuaig" target="_blank">github.com/ryanmccuaig</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ryanmjmccuaig" target="_blank">linkedin.com/in/ryanmjmccuaig</a></p>
+        <p>Feel free to reach out — I’d love to connect.</p>
+    
+        <form action="https://formspree.io/f/xdalavyb" method="POST" class="contact-form">
+    
+            <div class="name-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="First Name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="Last Name" required>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit">Send Message</button>
+    
+        </form>
     </section>
 
     <!-- FOOTER -->
@@ -102,5 +146,16 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+     <!-- TOGGLING -->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
 </body>
 </html>
