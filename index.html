@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan McCuaig | Mechatronics Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <section class="hero">
-        <h1>Ryan McCuaig</h1>
-        <p>Mechatronics Engineer | Robotics | Embedded Systems</p>
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Ryan McCuaig</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="linkedin-btn" href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Ryan McCuaig</h1>
+        <p>Mechatronics Engineer | Robotics & Embedded Systems</p>
     </section>
 
-    <section class="about">
-        <h2>About</h2>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
         <p>
-            Recent Mechatronic Systems Engineering graduate with experience in robotics,
-            automation, and embedded system design. Passionate about building intelligent
-            mechanical systems that solve real-world problems.
+            Recent Mechatronic Systems Engineering graduate with experience in robotics, automation, and embedded system design.
+            Passionate about building intelligent mechanical systems that solve real-world problems.
         </p>
     </section>
 
-    <section class="projects">
-        <h2>Featured Projects</h2>
+    <!-- RESUME SECTION -->
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>
+            <strong>Education:</strong> B.Eng Mechatronic Systems Engineering, University of Western Ontario (2025)<br>
+            <strong>Co-ops:</strong> Camtac Manufacturing (Linamar) 2024, Linamar Light Metals 2023<br>
+            <strong>Skills:</strong> Mechanical Design, Robotics, PLC, Embedded Systems, Simulink, MATLAB, Arduino, CAD (SolidWorks, AutoCAD)<br>
+            <a class="download-btn" href="RyanMcCuaig_Resume.pdf" target="_blank">Download Resume</a>
+        </p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
 
         <div class="project">
             <h3>Autonomous Tree-Planting Robot</h3>
-            <p>Designed and validated a robotic planting system including hydraulic actuation,
-            force sensing subsystems, and simulation-based verification.</p>
+            <p>Designed and validated a robotic planting system including hydraulic actuation, force sensing subsystems, and simulation-based verification.</p>
         </div>
 
         <div class="project">
             <h3>Autonomous Gap-Crossing Robot</h3>
-            <p>Team Lead for robotic system capable of detecting and navigating terrain gaps.</p>
+            <p>Team Lead for robotic system capable of detecting and navigating terrain gaps using sensors and actuators.</p>
+        </div>
+
+        <div class="project">
+            <h3>Electric Keyless Door Handle (Buzz)</h3>
+            <p>Developed a keyless smart door system with proximity unlocking, time-based virtual keys, and smartphone integration.</p>
         </div>
 
     </section>
 
-    <section class="contact">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
     </section>
 
 </body>
