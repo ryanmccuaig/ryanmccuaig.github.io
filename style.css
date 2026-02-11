@@ -36,15 +36,69 @@ footer {
     font-size: 14px;
   }
 
+/* Navbar container */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #fdfcf7; /* off-white theme */
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
 }
 
-.navbar .logo {
+/* Logo */
+.logo {
     font-weight: 700;
     font-size: 24px;
+    color: #111;
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077b5; /* LinkedIn blue accent */
+}
+
+/* Social icons */
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.8;
+}
+
+/* Responsive: mobile menu toggle */
+.menu-toggle {
+    display: none; /* we’ll show it only on small screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #111;
+    margin: 4px 0;
+    transition: 0.3s;
 }
 
 nav ul {
@@ -69,19 +123,15 @@ nav ul li a:hover {
     color: #0077b5; /* LinkedIn blue hover effect */
 }
 
-.linkedin-btn {
-    margin-left: 25px;
-    padding: 6px 12px;
-    background-color: #0077b5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.3s;
+.social-icons a img {
+    width: 24px;      /* size of the icons */
+    height: 24px;
+    margin-left: 15px; /* spacing between icons */
+    transition: opacity 0.3s;
 }
 
-.linkedin-btn:hover {
-    background-color: #005582;
+.social-icons a:hover img {
+    opacity: 0.8;
 }
 
 /* HERO SECTION */
@@ -114,6 +164,60 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
+#contact {
+    max-width: 700px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
 .download-btn {
     display: inline-block;
     margin-top: 15px;
@@ -138,33 +242,29 @@ a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    .navbar {
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
         width: 100%;
+        background-color: #fdfcf7;
+        padding: 20px 0;
+        border-top: 1px solid #e5e5e5;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    .nav-links.show {
+        display: flex;
     }
 
-    .linkedin-btn {
-        margin-left: 0;
-        margin-top: 10px;
+    .social-icons {
+        display: none; /* hide icons on small screens, optional */
     }
 
-    .hero {
-        padding: 60px 5%;
-    }
-
-    .section {
-        padding: 60px 5%;
+    .menu-toggle {
+        display: flex;
     }
 }
