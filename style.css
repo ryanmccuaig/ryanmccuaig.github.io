@@ -292,15 +292,11 @@ header.scrolled {
 
 
 /* CONTACT */
-.contact-container {
-    max-width: 700px;
-    margin: 0 auto; /* centers the form */
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 700px; /* keeps the form narrow but aligned */
 }
 
 .name-row {
@@ -366,17 +362,17 @@ button:hover {
 
 
 /* FOOTER */
+/* FOOTER */
 footer {
-    background-color: #fdfcf7;
-    padding: 30px 0;
-    border-top: 1px solid #e5e5e5;
-}
-
-footer .footer-container {
-    max-width: 1200px;      /* same as sections */
-    margin: 0 auto;          /* center container */
-    padding: 0 10%;          /* match section padding */
-    text-align: center;
+    width: 100%;                  /* full width */
+    border-top: 1px solid #e5e5e5; /* border stretches across */
+    background-color: #fdfcf7;    /* soft off-white */
+    text-align: center;           /* center the text */
+    padding: 20px 10%;            /* top-bottom 20px, left-right 10% padding */
+    font-size: 0.9rem;
+    color: #555;
+    box-sizing: border-box;       /* ensure padding is included in width */
+    margin-top: 60px;
 }
 
 /* LINKS */
