@@ -166,15 +166,22 @@ header.scrolled {
 }
 
 /* ========================= */
-/* PROJECT WOW DESIGN */
+/* PROJECT SECTION DESIGN */
 /* ========================= */
 
 .project-card {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin-bottom: 140px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-container {
+    max-width: 1200px;  /* same as other sections or matches 10% padding */
+    margin: 0 auto;     /* center it */
+    display: flex;
+    flex-direction: column;
+    gap: 140px;         /* spacing between project cards */
 }
 
 .project-card:hover {
