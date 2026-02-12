@@ -188,6 +188,7 @@ header.scrolled {
 .project-image img {
     width: 100%;
     max-width: 520px;
+    max-height: 520px;
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.08);
     transition: transform 0.4s ease;
