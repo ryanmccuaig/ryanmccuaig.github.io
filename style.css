@@ -3,12 +3,12 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fefcf6; /* soft off-white */
+    background-color: #fefcf6;
     color: #111;
     scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+/* HEADER */
 header {
     background-color: #ffffff;
     padding: 15px 10%;
@@ -18,43 +18,29 @@ header {
     z-index: 1000;
 }
 
-footer {
-    background-color: #fdfcf7;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 60px;
-    border-top: 1px solid #e5e5e5;
-    font-size: 0.9rem;
-    color: #555;
-}
-
+/* ANNOUNCEMENT */
 .announcement {
     background-color: #f5f5f5;
     color: #333;
     text-align: center;
     padding: 10px;
     font-size: 14px;
-  }
+}
 
-/* Navbar container */
+/* NAVBAR */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
-    background-color: #fdfcf7; /* off-white theme */
-    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
     position: relative;
 }
 
-/* Logo */
 .logo {
     font-weight: 700;
     font-size: 24px;
-    color: #111;
 }
 
-/* Nav links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -71,10 +57,9 @@ footer {
 }
 
 .nav-links a:hover {
-    color: #0077b5; /* LinkedIn blue accent */
+    color: #0077b5;
 }
 
-/* Social icons */
 .social-icons a img {
     width: 24px;
     height: 24px;
@@ -86,9 +71,9 @@ footer {
     opacity: 0.8;
 }
 
-/* Responsive: mobile menu toggle */
+/* MOBILE TOGGLE */
 .menu-toggle {
-    display: none; /* we’ll show it only on small screens */
+    display: none;
     flex-direction: column;
     cursor: pointer;
 }
@@ -98,43 +83,9 @@ footer {
     height: 3px;
     background: #111;
     margin: 4px 0;
-    transition: 0.3s;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #0077b5; /* LinkedIn blue hover effect */
-}
-
-.social-icons a img {
-    width: 24px;      /* size of the icons */
-    height: 24px;
-    margin-left: 15px; /* spacing between icons */
-    transition: opacity 0.3s;
-}
-
-.social-icons a:hover img {
-    opacity: 0.8;
-}
-
-/* HERO SECTION */
+/* HERO */
 .hero {
     text-align: left;
     padding: 100px 10%;
@@ -150,7 +101,7 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* SECTIONS */
+/* STANDARD SECTIONS */
 .section {
     padding: 80px 10%;
 }
@@ -160,14 +111,14 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* PROJECTS */
 .project {
     margin-bottom: 40px;
 }
 
-#contact {
+/* CONTACT */
+.contact-container {
     max-width: 700px;
-    margin: auto;
-    padding: 60px 20px;
 }
 
 .contact-form {
@@ -218,6 +169,7 @@ button:hover {
     background-color: #444;
 }
 
+/* RESUME BUTTON */
 .download-btn {
     display: inline-block;
     margin-top: 15px;
@@ -232,6 +184,17 @@ button:hover {
     background-color: #333;
 }
 
+/* FOOTER */
+footer {
+    background-color: #fdfcf7;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.9rem;
+    color: #555;
+}
+
 /* LINKS */
 a {
     color: #0077b5;
@@ -242,8 +205,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* RESPONSIVE */
 @media (max-width: 768px) {
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -261,10 +225,14 @@ a:hover {
     }
 
     .social-icons {
-        display: none; /* hide icons on small screens, optional */
+        display: none;
     }
 
     .menu-toggle {
         display: flex;
+    }
+
+    .name-row {
+        flex-direction: column;
     }
 }
