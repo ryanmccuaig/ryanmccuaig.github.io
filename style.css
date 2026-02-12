@@ -4,18 +4,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefcf6;
-    color: #111;
+    color: #1d1d1f; /* Apple dark gray */
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* HEADER */
 header {
-    background-color: #ffffff;
+    background-color: #ffffff; /* solid at top */
     padding: 15px 10%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* When scrolling */
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* ANNOUNCEMENT */
@@ -44,20 +53,20 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 50px;
     margin: 0;
     padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #111;
     font-weight: 500;
-    transition: color 0.3s;
+    letter-spacing: 0.3px;
+    color: #1d1d1f;
+    transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #0077b5;
+    font-weight: 600;
 }
 
 .social-icons a img {
@@ -87,28 +96,43 @@ header {
 
 /* HERO */
 .hero {
-    text-align: left;
-    padding: 100px 10%;
+    padding: 160px 10%;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: clamp(48px, 6vw, 72px);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 20px;
-    color: #555;
+    font-size: 22px;
+    font-weight: 400;
+    color: #6e6e73;
 }
 
 /* STANDARD SECTIONS */
 .section {
-    padding: 80px 10%;
+    padding: 120px 10%;
 }
 
 .section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6e6e73; /* soft gray */
+    max-width: 750px;
+}
+
+.section p + p {
+    margin-top: 20px;
 }
 
 /* PROJECTS */
@@ -155,18 +179,19 @@ textarea {
 }
 
 button {
-    padding: 14px;
+    padding: 16px;
     border: none;
-    background-color: #222;
+    background-color: #1d1d1f;
     color: white;
     font-size: 16px;
-    border-radius: 6px;
+    font-weight: 500;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background-color: #444;
+    opacity: 0.85;
 }
 
 /* RESUME BUTTON */
@@ -202,7 +227,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* RESPONSIVE */

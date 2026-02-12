@@ -70,7 +70,7 @@
             These opportunities allowed me to design, build, and test mechanical and electrical systems, with each project fueling my passion for creating solutions that make a difference.
         </p>
         <p>
-            Beyond engineering, I enjoy golf, skiing, and working on cars, and I’m always looking for new challenges that let me build, tinker, and innovate.
+            Beyond engineering, I enjoy golf, skiing, and have had a life-long passion for cars. I’m always looking for new challenges that let me build, tinker, and innovate.
         </p>
         <p>
             I’m excited to apply my skills and curiosity to new engineering projects and continue building systems that matter.
@@ -157,6 +157,19 @@
         
         toggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <!-- SCROLLING -->
+    <script>
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
         });
     </script>
     
