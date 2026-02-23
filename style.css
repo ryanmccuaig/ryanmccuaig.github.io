@@ -172,15 +172,24 @@ header.scrolled {
 /* ========================= */
 
 .project-card {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 320px 1fr;
     gap: 60px;
-    margin-bottom: 140px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 120px;
+    align-items: start;
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
+.project-media {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-media img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .project-card.reverse {
@@ -220,6 +229,43 @@ header.scrolled {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+}
+
+.project-gallery img {
+    height: 140px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.img-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.25s ease;
+}
+
+.img-overlay img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 10px;
 }
 
 /* TAGS */

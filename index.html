@@ -98,7 +98,7 @@
 
         <!-- PROJECT 1 -->
         <div class="project-card">
-            <div class="project-image">
+            <div class="project-media">
                 <img src="assets/projects/tree-robot/tree-robot.jpg" alt="Autonomous Tree Planting Robot">
             </div>
 
@@ -132,6 +132,13 @@
                         <li>Large contributor to the assembly of the prototype, which came fourth in the Western Engineering Design Showcase</li>
                     </ul>
 
+                    <h4>Photo Gallery</h4>
+                    <div class="project-gallery">
+                        <img src="assets/projects/tree-robot/tree-robot.jpg" alt="">
+                        <img src="assets/projects/tree-robot/tree-robot2.jpg" alt="">
+                        <img src="assets/projects/tree-robot/tree-robot3.jpg" alt="">
+                    </div>
+
                     <a href="assets/projects/tree-robot/MSE 4499 - Final Report Group 13.pdf" target="_blank" class="project-btn">
                         View Full Technical Report (PDF)
                     </a>
@@ -142,7 +149,7 @@
 
         <!-- PROJECT 2 -->
         <div class="project-card">
-            <div class="project-image">
+            <div class="project-media">
                 <img src="assets/projects/c-arm/c-arm.JPG" alt="C-Arm Fluoroscopy Simulator">
             </div>
 
@@ -182,7 +189,7 @@
 
         <!-- PROJECT 3 -->
         <div class="project-card">
-            <div class="project-image">
+            <div class="project-media">
                 <img src="assets/projects/gearbox/gearbox.jpg" alt="Gearbox">
             </div>
 
@@ -192,7 +199,9 @@
 
                 <p class="project-summary">
                     Designed a two-stage reduction gearbox that took the input torque and speed of a chosen motor and then stepped down the speed such that the output shaft achieved a desired speed and power.
-                <div class="tags">
+                </p>
+                
+                    <div class="tags">
                     <span>Mechanical Component Design</span>
                     <span>Motor Selection</span>
                     <span>FEA</span>
@@ -217,7 +226,7 @@
 
         <!-- PROJECT 4 -->
         <div class="project-card">
-            <div class="project-image">
+            <div class="project-media">
                 <img src="assets/projects/gap-robot/gap-robot.JPG" alt="Gap Crossing Robot">
             </div>
 
@@ -252,7 +261,7 @@
 
         <!-- PROJECT 5 -->
         <div class="project-card">
-            <div class="project-image">
+            <div class="project-media">
                 <img src="assets/projects/oven-heat/oven-heat.jpg" alt="Oven Heat Reclaimation">
             </div>
 
@@ -371,6 +380,20 @@
                 button.textContent = details.classList.contains("open")
                     ? "Hide Details"
                     : "View Details";
+            });
+        });
+    </script>
+
+    <!-- PHOTO GALLERY -->
+    <script>
+        document.querySelectorAll('.project-gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                const overlay = document.createElement('div');
+                overlay.classList.add('img-overlay');
+                overlay.innerHTML = `<img src="${img.src}">`;
+                document.body.appendChild(overlay);
+
+                overlay.addEventListener('click', () => overlay.remove());
             });
         });
     </script>
