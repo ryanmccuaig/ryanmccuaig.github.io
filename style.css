@@ -260,7 +260,7 @@ header.scrolled {
 /* EXPANDABLE DETAILS */
 .project-details {
     max-height: 0;
-    overflow: visible;
+    overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
