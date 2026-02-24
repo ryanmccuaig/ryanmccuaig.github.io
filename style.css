@@ -464,29 +464,4 @@ a:hover {
     .name-row {
         flex-direction: column;
     }
-
-    .project-card {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .project-image {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .project-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .project-content {
-        width: 100%;
-    }
-
-    .tags {
-        flex-wrap: wrap;
-    }
-    
 }
