@@ -466,8 +466,8 @@ a:hover {
     }
 
     .project-card {
-        flex-direction: column;
-        text-align: left;
+        grid-template-columns: 1fr;   /* stack vertically */
+        gap: 30px;                    /* tighten spacing */
     }
 
     .project-image {
@@ -483,6 +483,23 @@ a:hover {
 
     .project-content {
         width: 100%;
+    }
+
+    .project-content h3 {
+    font-size: 24px;
+    }
+
+    .project-summary {
+        font-size: 16px;
+    }
+
+    .project-media {
+    width: 100%;
+    }
+
+    .project-media img {
+        width: 100%;
+        height: auto;
     }
 
     .tags {
