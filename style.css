@@ -113,10 +113,11 @@ header.scrolled {
 
 /* HERO */
 .hero {
-    position: relative;
-    text-align: left;
+    display: flex;
+    align-items: center;          /* vertical centering */
+    justify-content: space-between;
     padding: 100px 10%;
-    background-color: #fefcf6; /* soft off-white base */
+    background-color: #fefcf6;
 
     /* subtle grid / blueprint pattern */
     background-image: 
@@ -137,6 +138,12 @@ header.scrolled {
     font-size: 22px;
     font-weight: 400;
     color: #6e6e73;
+}
+
+.hero-image img {
+    height: 460px;      /* tweak to taste */
+    width: auto;
+    display: block;
 }
 
 /* STANDARD SECTIONS */
@@ -464,6 +471,20 @@ a:hover {
 
     .name-row {
         flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: left;
+        gap: 40px;
+    }
+
+    .hero-image {
+        align-self: center;
+    }
+
+    .hero-image img {
+        height: 300px;
     }
 
     .project-card {
