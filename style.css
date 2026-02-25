@@ -127,14 +127,19 @@ header.scrolled {
     background-size: 40px 40px; /* size of the grid squares */
 }
 
-.hero h1 {
+/* TEXT */
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text h1 {
     font-size: clamp(48px, 6vw, 72px);
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero-text p {
     font-size: 22px;
     font-weight: 400;
     color: #6e6e73;
@@ -144,6 +149,7 @@ header.scrolled {
     height: 460px;      /* tweak to taste */
     width: auto;
     display: block;
+    border-radius: 15px;
 }
 
 /* STANDARD SECTIONS */
