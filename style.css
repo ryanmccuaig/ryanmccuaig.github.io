@@ -177,6 +177,7 @@ header.scrolled {
     gap: 60px;
     margin-bottom: 120px;
     align-items: start;
+    height: auto;
 }
 
 .project-media {
@@ -203,6 +204,10 @@ header.scrolled {
     border-radius: 20px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.08);
     transition: transform 0.4s ease;
+}
+
+.project-details.active {
+    max-height: none;
 }
 
 .project-card:hover .project-image img {
