@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Ryan McCuaig. Connect about engineering opportunities, collaborations, or questions.">
+    <meta name="description" content="Get in touch with Ryan McCuaig — mechatronics engineer open to opportunities in robotics, embedded systems, and mechanical design.">
     <title>Contact | Ryan McCuaig</title>
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo.svg" alt="Ryan McCuaig Logo">
-                </a>
-            </div>
+            <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="Ryan McCuaig"></a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,22 +24,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
         </nav>
     </header>
-
-    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-overlay"></div>
 
     <main>
         <section class="section">
@@ -52,7 +39,6 @@
 
             <div class="contact-container">
                 <form action="https://formspree.io/f/xdalavyb" method="POST" class="contact-form">
-
                     <div class="name-row">
                         <div class="form-group">
                             <label for="first-name">First Name</label>
@@ -63,30 +49,26 @@
                             <input type="text" id="last-name" name="Last Name" required>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="Email" required>
                     </div>
-
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="Message" rows="5" required></textarea>
+                        <textarea id="message" name="Message" rows="6" required></textarea>
                     </div>
-
                     <button type="submit">Send Message</button>
-
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-inner">
-            <p>© <span id="year"></span> Ryan McCuaig</p>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">GitHub</a>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Ryan McCuaig</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
         </div>
     </footer>

@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Ryan McCuaig, a Mechatronic Systems Engineering graduate from Western University passionate about robotics, embedded systems, and mechanical design.">
+    <meta name="description" content="About Ryan McCuaig — Mechatronics engineer with co-op experience at Linamar, SolidWorks certifications, and a passion for robotics and embedded systems.">
     <title>About | Ryan McCuaig</title>
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo.svg" alt="Ryan McCuaig Logo">
-                </a>
+                <a href="index.html"><img src="assets/logo.svg" alt="Ryan McCuaig"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -28,26 +26,18 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
         </nav>
     </header>
-
-    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-overlay"></div>
 
     <main>
         <section class="section">
-            <h2>About Me</h2>
+            <h2>About</h2>
+
             <p>
                 From building Meccano race cars as a kid to diagnosing and repairing my own car today, I've always been fascinated by how things work and the satisfaction of fixing them.
                 This hands-on curiosity naturally led me to engineering, where I could combine my love for problem-solving with practical design and innovation.
@@ -64,54 +54,164 @@
                 I'm excited to apply my skills and curiosity to new engineering projects and continue building systems that matter.
             </p>
 
-            <div class="skills-section">
-                <h3>Skills &amp; Tools</h3>
-                <div class="skill-categories">
-                    <div class="skill-category">
-                        <h4 class="skill-category-title">Software</h4>
-                        <div class="skill-grid">
-                            <div class="skill-card">SolidWorks</div>
-                            <div class="skill-card">KiCad</div>
-                            <div class="skill-card">Arduino IDE</div>
-                            <div class="skill-card">MATLAB</div>
-                            <div class="skill-card">Python</div>
-                            <div class="skill-card">C++</div>
-                            <div class="skill-card">Onshape</div>
-                            <div class="skill-card">3D Slicer</div>
-                        </div>
+            <!-- WORK EXPERIENCE -->
+            <h3 class="subsection-title">Work Experience</h3>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <p class="experience-role">Quality Engineering Intern</p>
+                        <p class="experience-company">Linamar — Camtac Manufacturing · Guelph, ON</p>
                     </div>
-                    <div class="skill-category">
-                        <h4 class="skill-category-title">Hardware</h4>
-                        <div class="skill-grid">
-                            <div class="skill-card">3D Printing</div>
-                            <div class="skill-card">Hydraulics</div>
-                            <div class="skill-card">PCB Design</div>
-                            <div class="skill-card">Sensors &amp; Actuators</div>
-                            <div class="skill-card">Rapid Prototyping</div>
-                            <div class="skill-card">Embedded Systems</div>
-                        </div>
+                    <span class="experience-date">May – Aug 2024</span>
+                </div>
+                <ul>
+                    <li>Operated Coordinate Measuring Machines (CMMs) to verify part dimensions against mechanical specifications</li>
+                    <li>Analyzed heat treatment results and prepared microhardness/microstructure reports linking material properties to performance</li>
+                    <li>Collaborated with cross-functional engineering teams to identify and resolve quality issues in automotive components</li>
+                    <li>Digitized QA workflows in Excel and implemented a part intake tracker, reducing manual entry time by ~30%</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <p class="experience-role">Manufacturing Engineering Intern</p>
+                        <p class="experience-company">Linamar — Light Metals · Guelph, ON</p>
                     </div>
-                    <div class="skill-category">
-                        <h4 class="skill-category-title">Analysis</h4>
-                        <div class="skill-grid">
-                            <div class="skill-card">FEA</div>
-                            <div class="skill-card">Simscape</div>
-                            <div class="skill-card">Git</div>
-                            <div class="skill-card">Microsoft Excel</div>
-                            <div class="skill-card">Control Systems</div>
-                        </div>
+                    <span class="experience-date">May – Aug 2023</span>
+                </div>
+                <ul>
+                    <li>Created engineering drawings in AutoCAD for structural EV components for a new high-pressure die casting (HPDC) facility</li>
+                    <li>Developed detailed process specifications in SolidWorks to guide machining and assembly</li>
+                    <li>Coordinated with equipment suppliers and client company to support facility setup and procurement</li>
+                    <li>Collaborated with quality and production teams to align on key project milestones</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <p class="experience-role">Quality Inspector Co-op</p>
+                        <p class="experience-company">Linamar — Comtech Manufacturing · Guelph, ON</p>
+                    </div>
+                    <span class="experience-date">May – Aug 2022</span>
+                </div>
+                <ul>
+                    <li>Conducted dimensional inspections of machined automotive components</li>
+                    <li>Supported quality control processes, documentation, and traceability workflows</li>
+                </ul>
+            </div>
+
+            <!-- EDUCATION -->
+            <h3 class="subsection-title">Education</h3>
+
+            <div class="education-block">
+                <p class="education-degree">Bachelor of Engineering Science (BESc) — Mechatronic Systems Engineering</p>
+                <p class="education-school">Western University · Class of 2025</p>
+                <p class="education-details">
+                    Graduated With Distinction · Co-op Designation<br>
+                    Dean's Honour List 2021–2025 · Western Scholarship of Distinction
+                </p>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <h3 class="subsection-title">Certifications</h3>
+
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <span class="cert-name">CSWPA-SU — SolidWorks Surfacing</span>
+                    <span class="cert-date">Nov 2024</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name">CSWA-AM — Additive Manufacturing</span>
+                    <span class="cert-date">Dec 2024</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name">CSWA-S — SolidWorks Simulation</span>
+                    <span class="cert-date">Mar 2024</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name">CSWA — Mechanical Design</span>
+                    <span class="cert-date">Oct 2022</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name">Standard First Aid, CPR &amp; AED</span>
+                    <span class="cert-date">Nov 2021</span>
+                </div>
+            </div>
+
+            <!-- SKILLS -->
+            <h3 class="subsection-title">Technical Skills</h3>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <p class="skill-category-title">Programming</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">PLC</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">ARM Assembly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <p class="skill-category-title">CAD &amp; Simulation</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">SolidWorks</span>
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">Onshape</span>
+                        <span class="skill-tag">KiCad</span>
+                        <span class="skill-tag">FEA</span>
+                        <span class="skill-tag">Simscape</span>
+                        <span class="skill-tag">Micro-Cap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <p class="skill-category-title">Technical</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">Embedded Systems</span>
+                        <span class="skill-tag">Circuit Design</span>
+                        <span class="skill-tag">PCB Design</span>
+                        <span class="skill-tag">3D Printing</span>
+                        <span class="skill-tag">Hydraulics</span>
+                        <span class="skill-tag">CNNs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <p class="skill-category-title">Tools</p>
+                    <div class="skill-list">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Siemens TIA Portal</span>
+                        <span class="skill-tag">MS Office</span>
                     </div>
                 </div>
             </div>
+
+            <!-- EXTRACURRICULARS -->
+            <h3 class="subsection-title">Extracurriculars</h3>
+
+            <div class="extra-card">
+                <h4>WE Bots Member — Western Engineering Robotics Team</h4>
+                <span class="experience-date">Sept 2023 – Apr 2024</span>
+                <ul>
+                    <li>Contributed to power systems design for an autonomous bipedal robot</li>
+                    <li>Hands-on experience with PCB layout, circuit analysis, and embedded microcontroller development</li>
+                </ul>
+            </div>
+
         </section>
     </main>
 
     <footer>
-        <div class="footer-inner">
-            <p>© <span id="year"></span> Ryan McCuaig</p>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">GitHub</a>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Ryan McCuaig</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
         </div>
     </footer>

@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Engineering projects by Ryan McCuaig — autonomous robots, medical devices, mechanical systems, and more.">
+    <meta name="description" content="Engineering projects by Ryan McCuaig — autonomous robots, medical simulators, gearbox design, and heat recovery systems.">
     <title>Projects | Ryan McCuaig</title>
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo.svg" alt="Ryan McCuaig Logo">
-                </a>
-            </div>
+            <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="Ryan McCuaig"></a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,28 +24,19 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
         </nav>
     </header>
-
-    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-overlay"></div>
 
     <main>
         <section class="section">
             <h2>Selected Engineering Projects</h2>
 
-            <!-- PROJECT 1: Autonomous Tree-Planting Robot (image left, content right) -->
+            <!-- PROJECT 1 -->
             <div class="project-card">
                 <div class="project-media">
                     <img src="assets/projects/tree-robot/tree-robot.jpg" alt="Autonomous Tree Planting Robot">
@@ -57,11 +44,9 @@
                 <div class="project-content">
                     <h3>Autonomous Tree-Planting Robot</h3>
                     <span class="project-meta">Fourth Year Capstone · 2025</span>
-
                     <p class="project-summary">
-                        Designed and validated a robotic planting system for autonomous reforestation, integrating hydraulic actuation, force sensing, and a conveyor loading system.
+                        Designed and validated a robotic planting system for autonomous reforestation, integrating hydraulic actuation, force sensing, and a conveyor loading system. Achieved a 15-second planting cycle.
                     </p>
-
                     <div class="tags">
                         <span>SolidWorks</span>
                         <span>Hydraulics</span>
@@ -70,9 +55,7 @@
                         <span>C++/Arduino</span>
                         <span>FEA</span>
                     </div>
-
-                    <button class="expand-btn">+ View Details</button>
-
+                    <button class="expand-btn">View Details</button>
                     <div class="project-details">
                         <h4>My Contributions</h4>
                         <ul>
@@ -83,7 +66,6 @@
                             <li>Validated hydraulic system requirements in Simscape</li>
                             <li>Large contributor to the assembly of the prototype, which came fourth in the Western Engineering Design Showcase</li>
                         </ul>
-
                         <h4>Photo Gallery</h4>
                         <div class="project-gallery">
                             <img src="assets/projects/tree-robot/tree-robot1.jpg" alt="Tree-planting robot photo 1">
@@ -92,27 +74,22 @@
                             <img src="assets/projects/tree-robot/tree-robot4.jpg" alt="Tree-planting robot photo 4">
                             <img src="assets/projects/tree-robot/tree-robot5.jpg" alt="Tree-planting robot photo 5">
                         </div>
-
-                        <a href="assets/projects/tree-robot/MSE 4499 - Final Report Group 13.pdf" target="_blank" class="project-btn">
-                            View Full Technical Report (PDF)
-                        </a>
+                        <a href="assets/projects/tree-robot/MSE 4499 - Final Report Group 13.pdf" target="_blank" class="project-btn">View Full Technical Report (PDF)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 2: C-Arm Fluoroscopy Simulator (content left, image right) -->
-            <div class="project-card project-card--alt">
+            <!-- PROJECT 2 (reversed) -->
+            <div class="project-card reverse">
                 <div class="project-media">
                     <img src="assets/projects/c-arm/c-arm.JPG" alt="C-Arm Fluoroscopy Simulator">
                 </div>
                 <div class="project-content">
-                    <h3>C-Arm Fluoroscopy Simulator for Medical Students &amp; Residents</h3>
+                    <h3>C-Arm Fluoroscopy Simulator</h3>
                     <span class="project-meta">Third Year · 2024</span>
-
                     <p class="project-summary">
                         Developed a scaled C-Arm Fluoroscopy Simulator to aid medical trainees in comprehending the relation between the C-Arm's position and the resulting images.
                     </p>
-
                     <div class="tags">
                         <span>SolidWorks</span>
                         <span>Arduino</span>
@@ -120,9 +97,7 @@
                         <span>3D Printing</span>
                         <span>3D Slicer</span>
                     </div>
-
-                    <button class="expand-btn">+ View Details</button>
-
+                    <button class="expand-btn">View Details</button>
                     <div class="project-details">
                         <h4>My Contributions</h4>
                         <ul>
@@ -130,43 +105,35 @@
                             <li>Led 3D printing efforts</li>
                             <li>Main contributor to the assembly of the final product alongside another team member</li>
                         </ul>
-
                         <h4>Photo Gallery</h4>
                         <div class="project-gallery">
                             <img src="assets/projects/c-arm/c-arm1.jpg" alt="C-Arm simulator photo 1">
                             <img src="assets/projects/c-arm/c-arm2.jpg" alt="C-Arm simulator photo 2">
                             <img src="assets/projects/c-arm/c-arm3.jpg" alt="C-Arm simulator photo 3">
                         </div>
-
-                        <a href="assets/projects/c-arm/MSE3302B_FW23_Project.ipynb" target="_blank" class="project-btn">
-                            View Full Technical Report (Jupyter Notebook)
-                        </a>
+                        <a href="assets/projects/c-arm/MSE3302B_FW23_Project.ipynb" target="_blank" class="project-btn">View Technical Report (Jupyter Notebook)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 3: Speed Reducer Gearbox (image left, content right) -->
+            <!-- PROJECT 3 -->
             <div class="project-card">
                 <div class="project-media">
                     <img src="assets/projects/gearbox/gearbox.jpg" alt="Speed Reducer Gearbox">
                 </div>
                 <div class="project-content">
-                    <h3>Speed Reducer Gearbox Design and Analysis</h3>
+                    <h3>Speed Reducer Gearbox Design &amp; Analysis</h3>
                     <span class="project-meta">Third Year · 2024</span>
-
                     <p class="project-summary">
-                        Designed a two-stage reduction gearbox that took the input torque and speed of a chosen motor and then stepped down the speed such that the output shaft achieved a desired speed and power.
+                        Designed a two-stage reduction gearbox that took the input torque and speed of a chosen motor and stepped down the speed such that the output shaft achieved a desired speed and power.
                     </p>
-
                     <div class="tags">
-                        <span>Mechanical Component Design</span>
+                        <span>Mechanical Design</span>
                         <span>Motor Selection</span>
                         <span>FEA</span>
-                        <span>Microsoft Excel</span>
+                        <span>Excel</span>
                     </div>
-
-                    <button class="expand-btn">+ View Details</button>
-
+                    <button class="expand-btn">View Details</button>
                     <div class="project-details">
                         <h4>My Contributions</h4>
                         <ul>
@@ -174,43 +141,35 @@
                             <li>Selected appropriate motor based on gearbox efficiency and desired output power</li>
                             <li>Aided in FEA simulations for gearbox shaft loadings in SolidWorks</li>
                         </ul>
-
                         <h4>Photo Gallery</h4>
                         <div class="project-gallery">
                             <img src="assets/projects/gearbox/gearbox1.jpg" alt="Gearbox photo 1">
                             <img src="assets/projects/gearbox/gearbox2.jpg" alt="Gearbox photo 2">
                             <img src="assets/projects/gearbox/gearbox3.jpg" alt="Gearbox photo 3">
                         </div>
-
-                        <a href="assets/projects/gearbox/MSE 3380 Group Project Final Report - 2023-24.pdf" target="_blank" class="project-btn">
-                            View Full Technical Report (PDF)
-                        </a>
+                        <a href="assets/projects/gearbox/MSE 3380 Group Project Final Report - 2023-24.pdf" target="_blank" class="project-btn">View Full Technical Report (PDF)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PROJECT 4: Gap Crossing Robot (content left, image right) -->
-            <div class="project-card project-card--alt">
+            <!-- PROJECT 4 (reversed) -->
+            <div class="project-card reverse">
                 <div class="project-media">
                     <img src="assets/projects/gap-robot/gap-robot.JPG" alt="Gap Crossing Robot">
                 </div>
                 <div class="project-content">
                     <h3>Gap Crossing Robot</h3>
                     <span class="project-meta">Second Year · 2023</span>
-
                     <p class="project-summary">
-                        Led the design and development of an autonomous robot capable of detecting and traversing uneven gaps using sensor-driven decision making and microcontroller-based control. The system integrated mechanical design, embedded programming, and iterative prototyping to achieve reliable operation.
+                        Led the design and development of an autonomous robot capable of detecting and traversing uneven gaps using sensor-driven decision making and microcontroller-based control.
                     </p>
-
                     <div class="tags">
                         <span>Arduino</span>
                         <span>Sensors &amp; Actuators</span>
-                        <span>Autonomous Navigation</span>
+                        <span>Autonomous Nav</span>
                         <span>Rapid Prototyping</span>
                     </div>
-
-                    <button class="expand-btn">+ View Details</button>
-
+                    <button class="expand-btn">View Details</button>
                     <div class="project-details">
                         <h4>My Contributions</h4>
                         <ul>
@@ -219,7 +178,6 @@
                             <li>Tested and refined robot operation through iterative prototyping</li>
                             <li>Coordinated build timeline, task delegation, and final validation</li>
                         </ul>
-
                         <h4>Photo Gallery</h4>
                         <div class="project-gallery">
                             <img src="assets/projects/gap-robot/gap-robot1.jpg" alt="Gap crossing robot photo 1">
@@ -230,7 +188,7 @@
                 </div>
             </div>
 
-            <!-- PROJECT 5: Bakery Oven Heat Reclamation System (image left, content right) -->
+            <!-- PROJECT 5 -->
             <div class="project-card">
                 <div class="project-media">
                     <img src="assets/projects/oven-heat/oven-heat.jpg" alt="Bakery Oven Heat Reclamation System">
@@ -238,19 +196,15 @@
                 <div class="project-content">
                     <h3>Bakery Oven Heat Reclamation System</h3>
                     <span class="project-meta">First Year · 2022</span>
-
                     <p class="project-summary">
-                        Designed a sustainable heat recovery system that captures waste thermal energy from an industrial bakery oven and repurposes it to heat office space. The solution integrated fluid transport design and control electronics to reduce energy consumption and operational costs.
+                        Designed a sustainable heat recovery system that captures waste thermal energy from an industrial bakery oven and repurposes it to heat office space, reducing energy consumption and operational costs.
                     </p>
-
                     <div class="tags">
                         <span>CAD (Onshape)</span>
-                        <span>Fluid Transport Systems</span>
+                        <span>Fluid Transport</span>
                         <span>Client Communication</span>
                     </div>
-
-                    <button class="expand-btn">+ View Details</button>
-
+                    <button class="expand-btn">View Details</button>
                     <div class="project-details">
                         <h4>My Contributions</h4>
                         <ul>
@@ -259,17 +213,13 @@
                             <li>Helped prototype and validate the control system using Arduino and pump actuation</li>
                             <li>Participated in testing, validation, and economic feasibility analysis and presented findings to client</li>
                         </ul>
-
                         <h4>Photo Gallery</h4>
                         <div class="project-gallery">
                             <img src="assets/projects/oven-heat/oven-heat1.jpg" alt="Oven heat reclamation photo 1">
                             <img src="assets/projects/oven-heat/oven-heat2.jpg" alt="Oven heat reclamation photo 2">
                             <img src="assets/projects/oven-heat/oven-heat3.jpg" alt="Oven heat reclamation photo 3">
                         </div>
-
-                        <a href="assets/projects/oven-heat/T21Heat Winter Final Report.pdf" target="_blank" class="project-btn">
-                            View Full Technical Report (PDF)
-                        </a>
+                        <a href="assets/projects/oven-heat/T21Heat Winter Final Report.pdf" target="_blank" class="project-btn">View Full Technical Report (PDF)</a>
                     </div>
                 </div>
             </div>
@@ -278,11 +228,11 @@
     </main>
 
     <footer>
-        <div class="footer-inner">
-            <p>© <span id="year"></span> Ryan McCuaig</p>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">GitHub</a>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Ryan McCuaig</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
         </div>
     </footer>

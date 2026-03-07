@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download or view Ryan McCuaig's engineering resume. Mechatronic Systems Engineering BESc graduate from Western University, 2025.">
+    <meta name="description" content="Ryan McCuaig's engineering resume — Mechatronic Systems Engineering BESc from Western University, 3 co-op terms, 4 SolidWorks certifications.">
     <title>Resume | Ryan McCuaig</title>
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo.svg" alt="Ryan McCuaig Logo">
-                </a>
-            </div>
+            <div class="logo"><a href="index.html"><img src="assets/logo.svg" alt="Ryan McCuaig"></a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,65 +24,44 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-icons">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
         </nav>
     </header>
-
-    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-overlay"></div>
 
     <main>
         <section class="section">
             <h2>Resume</h2>
-            <p>Below is my resume. You can scroll through it or download it.</p>
 
             <div class="resume-highlights">
-                <div class="highlight-item">
-                    <span class="highlight-label">Degree</span>
-                    <span class="highlight-value">BESc, Mechatronic Systems Engineering</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-label">Institution</span>
-                    <span class="highlight-value">Western University</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-label">Graduated</span>
-                    <span class="highlight-value">2025</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-label">Specializations</span>
-                    <span class="highlight-value">Robotics · Embedded Systems · Control Systems</span>
-                </div>
+                <h3>BESc Mechatronic Systems Engineering — Western University, 2025</h3>
+                <p>
+                    Graduated With Distinction · 3 Engineering Co-ops at Linamar · 4 SolidWorks Certifications · Dean's Honour List 2021–2025
+                </p>
             </div>
 
-            <iframe
-                src="assets/Ryan_McCuaig.pdf"
-                width="100%"
-                height="680px"
-                class="resume-embed"
-                title="Ryan McCuaig Resume"
-            ></iframe>
+            <div class="resume-embed">
+                <iframe
+                    src="assets/Ryan_McCuaig.pdf"
+                    title="Ryan McCuaig Resume"
+                ></iframe>
+            </div>
 
-            <a href="assets/Ryan_McCuaig.pdf" download class="download-btn">Download PDF</a>
+            <div class="resume-actions">
+                <a href="assets/Ryan_McCuaig.pdf" download class="download-btn">Download PDF</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-inner">
-            <p>© <span id="year"></span> Ryan McCuaig</p>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
-                <a href="https://github.com/ryanmccuaig" target="_blank">GitHub</a>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Ryan McCuaig</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/ryanmccuaig" target="_blank" rel="noopener"><img src="images/github.svg" alt="GitHub"></a>
             </div>
         </div>
     </footer>

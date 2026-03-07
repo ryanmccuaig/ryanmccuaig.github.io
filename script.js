@@ -5,23 +5,21 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // =====================
-// MOBILE MENU (slide-in from right)
+// MOBILE MENU (slide-in)
 // =====================
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
-const navOverlay = document.getElementById('navOverlay');
+const overlay = document.querySelector('.nav-overlay');
 
 function openMenu() {
     navLinks.classList.add('show');
-    toggle.classList.add('active');
-    if (navOverlay) navOverlay.classList.add('show');
+    if (overlay) overlay.classList.add('show');
     document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
     navLinks.classList.remove('show');
-    toggle.classList.remove('active');
-    if (navOverlay) navOverlay.classList.remove('show');
+    if (overlay) overlay.classList.remove('show');
     document.body.style.overflow = '';
 }
 
@@ -35,17 +33,16 @@ if (toggle && navLinks) {
     });
 }
 
-if (navOverlay) {
-    navOverlay.addEventListener('click', closeMenu);
+if (overlay) {
+    overlay.addEventListener('click', closeMenu);
 }
 
-// Close menu on Escape key
-document.addEventListener('keydown', e => {
+document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMenu();
 });
 
 // =====================
-// SCROLL HEADER EFFECT
+// SCROLL HEADER
 // =====================
 const header = document.querySelector("header");
 if (header) {
@@ -68,25 +65,33 @@ if (header) {
 })();
 
 // =====================
-// EXPAND / COLLAPSE PROJECT DETAILS
+// EXPAND / COLLAPSE
 // =====================
 document.querySelectorAll(".expand-btn").forEach(button => {
     button.addEventListener("click", () => {
         const details = button.nextElementSibling;
         const isOpen = details.classList.toggle("open");
-        button.textContent = isOpen ? "— Hide Details" : "+ View Details";
+        button.textContent = isOpen ? "Hide Details" : "View Details";
     });
 });
 
 // =====================
-// PHOTO GALLERY LIGHTBOX
+// LIGHTBOX
 // =====================
 document.querySelectorAll('.project-gallery img').forEach(img => {
     img.addEventListener('click', () => {
-        const overlay = document.createElement('div');
-        overlay.classList.add('img-overlay');
-        overlay.innerHTML = `<img src="${img.src}" alt="">`;
-        document.body.appendChild(overlay);
-        overlay.addEventListener('click', () => overlay.remove());
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('img-overlay');
+        lightbox.innerHTML = `<img src="${img.src}" alt="">`;
+        document.body.appendChild(lightbox);
+
+        const closeLightbox = () => lightbox.remove();
+        lightbox.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', function handler(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                document.removeEventListener('keydown', handler);
+            }
+        });
     });
 });
