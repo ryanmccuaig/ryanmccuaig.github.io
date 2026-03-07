@@ -149,7 +149,7 @@ header.scrolled {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+    z-index: 999;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -1058,8 +1058,9 @@ a:hover {
     .nav-links a {
         display: block;
         padding: 16px 0;
-        font-size: 16px;
+        font-size: 18px;
         text-transform: none;
+        color: #e5e5e5;
     }
 
     .nav-links a.active {
