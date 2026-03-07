@@ -12,13 +12,13 @@ const navLinks = document.querySelector('.nav-links');
 const overlay = document.querySelector('.nav-overlay');
 
 function openMenu() {
-    navLinks.classList.add('show');
+    if (navLinks) navLinks.classList.add('show');
     if (overlay) overlay.classList.add('show');
     document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
-    navLinks.classList.remove('show');
+    if (navLinks) navLinks.classList.remove('show');
     if (overlay) overlay.classList.remove('show');
     document.body.style.overflow = '';
 }

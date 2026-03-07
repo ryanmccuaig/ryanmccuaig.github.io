@@ -146,16 +146,18 @@ header.scrolled {
    MOBILE SLIDE-IN MENU
    ===================== */
 .nav-overlay {
-    display: none;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    animation: fadeIn 0.25s ease;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 .nav-overlay.show {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* =====================
@@ -901,6 +903,10 @@ a:hover {
         order: unset;
     }
 
+    .project-media {
+        width: 100%;
+    }
+
     .hero {
         gap: 48px;
     }
@@ -920,13 +926,14 @@ a:hover {
     }
 
     .nav-links {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
         width: 280px;
         height: 100vh;
+        height: 100dvh;
         background: #0f0f0f;
         border-left: 1px solid #1a1a1a;
         padding: 80px 32px 32px;
@@ -934,11 +941,12 @@ a:hover {
         z-index: 1001;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+        pointer-events: none;
     }
 
     .nav-links.show {
-        display: flex;
         transform: translateX(0);
+        pointer-events: auto;
     }
 
     .nav-links li {
@@ -998,19 +1006,47 @@ a:hover {
     }
 
     /* Projects */
-    .project-card {
+    .project-card,
+    .project-card.reverse {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 20px;
         margin-bottom: 40px;
     }
 
+    .project-card.reverse .project-media,
+    .project-card.reverse .project-content {
+        order: unset;
+    }
+
+    .project-media {
+        width: 100%;
+    }
+
     .project-media img {
+        width: 100%;
         aspect-ratio: 16/10;
+    }
+
+    .project-content {
+        max-width: 100%;
     }
 
     .project-content h3 {
         font-size: 20px;
+    }
+
+    .project-summary {
+        font-size: 15px;
+    }
+
+    .tags {
+        gap: 6px;
+    }
+
+    .tags span {
+        font-size: 11px;
+        padding: 4px 8px;
     }
 
     .project-gallery img {
