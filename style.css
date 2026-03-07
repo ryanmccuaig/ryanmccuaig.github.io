@@ -20,6 +20,15 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -259,6 +268,7 @@ header.scrolled {
     padding: 80px 8%;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .section h2 {
@@ -501,15 +511,16 @@ header.scrolled {
    ===================== */
 .project-card {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 48px;
-    margin-bottom: 80px;
+    grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+    gap: 40px;
+    margin-bottom: 64px;
     align-items: start;
-    padding: 32px;
+    padding: 28px;
     background: #111;
     border: 1px solid #1a1a1a;
     border-radius: 12px;
     transition: border-color 0.3s ease;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -517,7 +528,7 @@ header.scrolled {
 }
 
 .project-card.reverse {
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 380px);
 }
 
 .project-card.reverse .project-media {
@@ -530,13 +541,22 @@ header.scrolled {
 
 .project-media {
     width: 100%;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .project-media img {
     width: 100%;
+    max-width: 100%;
     border-radius: 8px;
     object-fit: cover;
     aspect-ratio: 4/3;
+    display: block;
+}
+
+.project-content {
+    min-width: 0;
+    overflow: hidden;
 }
 
 .project-content h3 {
@@ -605,7 +625,7 @@ header.scrolled {
 }
 
 .project-details.open {
-    max-height: 2000px;
+    max-height: 5000px;
     padding-bottom: 8px;
 }
 
@@ -658,10 +678,12 @@ header.scrolled {
     gap: 12px;
     margin: 16px 0 20px;
     overflow-x: auto;
+    overflow-y: hidden;
     padding-bottom: 8px;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: #333 transparent;
+    max-width: 100%;
 }
 
 .project-gallery img {
@@ -1112,9 +1134,9 @@ a:hover {
     .project-card,
     .project-card.reverse {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-        margin-bottom: 40px;
+        gap: 16px;
+        padding: 16px;
+        margin-bottom: 32px;
     }
 
     .project-card.reverse .project-media,
@@ -1128,7 +1150,7 @@ a:hover {
 
     .project-media img {
         width: 100%;
-        max-height: 220px;
+        max-height: 200px;
         object-fit: cover;
         aspect-ratio: auto;
     }
@@ -1154,8 +1176,20 @@ a:hover {
         padding: 4px 8px;
     }
 
+    .project-gallery {
+        max-width: calc(100vw - 80px);
+    }
+
     .project-gallery img {
-        height: 120px;
+        height: 100px;
+    }
+
+    .project-details ul {
+        padding-left: 16px;
+    }
+
+    .project-details li {
+        font-size: 14px;
     }
 
     /* Contact */
