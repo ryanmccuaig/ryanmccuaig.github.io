@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryan McCuaig — Mechatronic Systems Engineering graduate from Western University, specializing in robotics, embedded systems, and control systems.">
-    <title>Ryan McCuaig | Mechatronics Engineer</title>
+    <meta name="description" content="Get in touch with Ryan McCuaig. Connect about engineering opportunities, collaborations, or questions.">
+    <title>Contact | Ryan McCuaig</title>
     <link rel="icon" type="image/png" href="assets/favicon-96x96.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,18 +44,37 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Hi, I'm Ryan McCuaig.</h1>
-                <p class="hero-subtitle">Mechatronic Systems Engineering Graduate</p>
-                <p class="hero-tagline">Building systems that move, sense, and matter.</p>
-                <div class="hero-cta">
-                    <a href="projects.html" class="btn-primary">View Projects</a>
-                    <a href="about.html" class="btn-secondary">About Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/headshot.png" alt="Ryan McCuaig headshot">
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out — I'd love to connect.</p>
+
+            <div class="contact-container">
+                <form action="https://formspree.io/f/xdalavyb" method="POST" class="contact-form">
+
+                    <div class="name-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
             </div>
         </section>
     </main>
