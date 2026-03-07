@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,13 +35,15 @@
                     <img src="images/github.svg" alt="GitHub">
                 </a>
             </div>
-            <div class="menu-toggle" aria-label="Toggle navigation">
+            <button class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <main>
         <section class="section">
@@ -61,11 +63,57 @@
             <p>
                 I'm excited to apply my skills and curiosity to new engineering projects and continue building systems that matter.
             </p>
+
+            <div class="skills-section">
+                <h3>Skills &amp; Tools</h3>
+                <div class="skill-categories">
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">Software</h4>
+                        <div class="skill-grid">
+                            <div class="skill-card">SolidWorks</div>
+                            <div class="skill-card">KiCad</div>
+                            <div class="skill-card">Arduino IDE</div>
+                            <div class="skill-card">MATLAB</div>
+                            <div class="skill-card">Python</div>
+                            <div class="skill-card">C++</div>
+                            <div class="skill-card">Onshape</div>
+                            <div class="skill-card">3D Slicer</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">Hardware</h4>
+                        <div class="skill-grid">
+                            <div class="skill-card">3D Printing</div>
+                            <div class="skill-card">Hydraulics</div>
+                            <div class="skill-card">PCB Design</div>
+                            <div class="skill-card">Sensors &amp; Actuators</div>
+                            <div class="skill-card">Rapid Prototyping</div>
+                            <div class="skill-card">Embedded Systems</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 class="skill-category-title">Analysis</h4>
+                        <div class="skill-grid">
+                            <div class="skill-card">FEA</div>
+                            <div class="skill-card">Simscape</div>
+                            <div class="skill-card">Git</div>
+                            <div class="skill-card">Microsoft Excel</div>
+                            <div class="skill-card">Control Systems</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© <span id="year"></span> Ryan McCuaig. All rights reserved.</p>
+        <div class="footer-inner">
+            <p>© <span id="year"></span> Ryan McCuaig</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/ryanmjmccuaig" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ryanmccuaig" target="_blank">GitHub</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

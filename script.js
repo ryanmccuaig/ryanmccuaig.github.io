@@ -5,23 +5,44 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // =====================
-// MOBILE MENU TOGGLE
+// MOBILE MENU (slide-in from right)
 // =====================
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navOverlay = document.getElementById('navOverlay');
+
+function openMenu() {
+    navLinks.classList.add('show');
+    toggle.classList.add('active');
+    if (navOverlay) navOverlay.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+    navLinks.classList.remove('show');
+    toggle.classList.remove('active');
+    if (navOverlay) navOverlay.classList.remove('show');
+    document.body.style.overflow = '';
+}
 
 if (toggle && navLinks) {
     toggle.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+        navLinks.classList.contains('show') ? closeMenu() : openMenu();
     });
 
-    // Close menu when a nav link is tapped
     navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('show');
-        });
+        link.addEventListener('click', closeMenu);
     });
 }
+
+if (navOverlay) {
+    navOverlay.addEventListener('click', closeMenu);
+}
+
+// Close menu on Escape key
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+});
 
 // =====================
 // SCROLL HEADER EFFECT
@@ -53,7 +74,7 @@ document.querySelectorAll(".expand-btn").forEach(button => {
     button.addEventListener("click", () => {
         const details = button.nextElementSibling;
         const isOpen = details.classList.toggle("open");
-        button.textContent = isOpen ? "Hide Details" : "View Details";
+        button.textContent = isOpen ? "— Hide Details" : "+ View Details";
     });
 });
 
